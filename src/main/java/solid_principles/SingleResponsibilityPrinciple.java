@@ -58,7 +58,7 @@ class Journal {
 class Persistence {
     public void save(Journal journal, String fileName, Boolean overwrite) throws FileNotFoundException {
         if (overwrite || new File(fileName).exists()) {
-            try (PrintStream out = new PrintStream(fileName)){
+            try (PrintStream out = new PrintStream(fileName)) {
                 out.println(journal.toString());
             }
         }
