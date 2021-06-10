@@ -12,7 +12,6 @@ enum Color {
 enum Size {
     SHORT, MEDIUM, LONG
 }
-
 enum Type {
     TSHIRT, PANT, BELT
 }
