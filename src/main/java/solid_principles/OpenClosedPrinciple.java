@@ -1,7 +1,6 @@
 package main.java.solid_principles;
 //Open for extension, closed for modification
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -142,7 +141,7 @@ class OpenClosedPrinciple {
         Product p5 = new Product("P5", Color.BLUE, Size.SHORT,Type.BELT);
 
         List<Product> products = new ArrayList<Product>(Arrays.asList(p1,p2,p3,p4,p5));
-        //List<Product> products = List.of(p1,p2,p3); //Java 9
+        //List<Product> products = List.of(p1,p2,p3,p4,p5); //Java 9
 
         ProductFilter pf = new ProductFilter();
         pf.filterByColor(products, Color.BLUE).forEach(p -> System.out.println("Filter By Color Blue - " + p.name));
