@@ -1,10 +1,14 @@
 package main.java.solid_principles;
-//Open for extension, closed for modification
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
+
+/*
+    -Open for extension, closed for modification
+    -Design patten used: Specification
+ */
 
 enum Color {
     RED, GREEN, BLUE
@@ -130,6 +134,7 @@ class BetterFilter implements filter<Product> {
     }
 }
 
+//Specification design pattern
 class OpenClosedPrinciple {
 
     public static void main(String[] args) {
